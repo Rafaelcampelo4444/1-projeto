@@ -40,8 +40,8 @@ body * {
 }
 
 #container {
-  width: 360px;
-
+  width: 100%;
+  max-width: 588px;
   /*margin-top: 56px;
   margin-right: auto;
   margin-bottom:auto;
@@ -100,7 +100,7 @@ body * {
 ul {
   list-style: none;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   gap: 16px;
   padding: 24px 0px;
 }
