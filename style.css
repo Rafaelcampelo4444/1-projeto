@@ -13,6 +13,7 @@ body {
 */
   /*background: color image repeat position/size; */
   background: var(--light) no-repeat top center/cover;
+height: 100vh;
 }
 
 :root {
@@ -153,4 +154,13 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+/* MEDIA QUERIES*/
+@media (min-width: 700px) {
+  :root {
+    --light: url(./assets/Background-dark.jpg);
+  }
+  .light {
+    --light: url(./assets/Background-light.jpg);
+  }
 }
