@@ -13,7 +13,7 @@ body {
 */
   /*background: color image repeat position/size; */
   background: var(--light) no-repeat top center/cover;
-height: 100vh;
+  height: 100vh;
 }
 
 :root {
@@ -75,11 +75,18 @@ body * {
   z-index: 1;
   top: 50%;
   transform: translatey(-50%);
+  animation: slide-back 0.3s;
 }
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.3s forwards;
+
 }
+
+#switch button:hover {
+  outline: 8px solid var(--hightligh-color);
+}
+
+
 #switch span {
   display: block;
   width: 64px;
@@ -162,5 +169,23 @@ footer {
   }
   .light {
     --light: url(./assets/Background-light.jpg);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
