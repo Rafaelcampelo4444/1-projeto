@@ -12,7 +12,7 @@ function toggleMode() {
     img.setAttribute("alt", "mayk brito com oculos escuro")
   } else {
     //set tiver sem light mode, manter a imagem normal
-    img.setAttribute("src", "./assets/avatar.png")
+    img.setAttribute("src", "./assets/Avatar.png")
     img.setAttribute("alt", "mayk brito com oculos transparente")
   }
 }
